@@ -10,7 +10,23 @@ public class Library {
             patrons = new ArrayList<>();
         }
 
-        //METHOD TO ADD BOOK
+    public static List<Book> getBooks() {
+        return books;
+    }
+
+    public static void setBooks(List<Book> books) {
+        Library.books = books;
+    }
+
+    public static List<Patron> getPatrons() {
+        return patrons;
+    }
+
+    public static void setPatrons(List<Patron> patrons) {
+        Library.patrons = patrons;
+    }
+
+    //METHOD TO ADD BOOK
         public void addBook(Book book) {
              books.add(book);
         }

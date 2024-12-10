@@ -12,7 +12,13 @@ public class Patron {
         PatronID = patronID;
     }
 
+    public String getFullName() {
+        return FullName;
+    }
 
+    public String getPatronID() {
+        return PatronID;
+    }
 
     @Override
     public String toString() {
