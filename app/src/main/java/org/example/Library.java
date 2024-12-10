@@ -11,39 +11,39 @@ public class Library {
         }
 
         //METHOD TO ADD BOOK
-        public Book addBook(Book book) {
+        public void addBook(Book book) {
              books.add(book);
-            return book;
         }
 
         //METHOD TO ADD PATRON
-        public Patron addPatron(Patron patron) {
+        public void addPatron(Patron patron) {
             patrons.add(patron);
-            return patron;
         }
 
     //FIND BOOKS BY TITLE USING FOR EACH LOOP AND IF-ELSE FOR VALIDATION FOR BOOK TITLE
-    public static List<Book> findBookByTitle(String title) {
+    public List<Book> findBookByTitle(String title) {
         List<Book> foundBooks = new ArrayList<>();
         for (Book book : books) {
             if (book.getTitle().equals(title)) {
                 foundBooks.add(book);
-            }else {
+            }if (foundBooks.isEmpty()) {
                 System.out.println("Cannot Find Book By Title");
             }
+
         }
         return foundBooks;
     }
 
     //FIND BOOKS BY AUTHOR USING FOR EACH LOOP AND IF-ELSE FOR VALIDATION OF AUTHOR NAME
-    public static List<Book> findBooksByAuthor(String Author)throws Exception {
+    public List<Book> findBooksByAuthor(String Author){
             List<Book> foundBooks = new ArrayList<>();
             for (Book book : books) {
                 if (book.getAuthor().equals(Author)){
                     foundBooks.add(book);
-                }else {
+                }if (foundBooks.isEmpty()) {
                     System.out.println("Cannot Find Book By Author");
                 }
+
             }
             return foundBooks;
         }

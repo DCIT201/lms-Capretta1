@@ -2,13 +2,12 @@ package org.example;
 
 public class Book {
 
-    private String Title;
-    private String Author;
-    private int YearPublished;
+    private final String Title;
+    private final String Author;
+    private final int YearPublished;
 
 
-    public Book() {
-    }
+
 
     public Book(String title, String author, int yearPublished) {
         Title = title;
@@ -21,25 +20,19 @@ public class Book {
         return Title;
     }
 
-    public void setTitle(String title) {
-        Title = title;
-    }
+
 
     public String getAuthor() {
         return Author;
     }
 
-    public void setAuthor(String author) {
-        Author = author;
-    }
+
 
     public int getYearPublished() {
         return YearPublished;
     }
 
-    public void setYearPublished(int yearPublished) {
-        YearPublished = yearPublished;
-    }
+
 
 
 
